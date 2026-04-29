@@ -1,14 +1,12 @@
 import pandas as pd
-from pathlib import Path
-
-RAW_DATA = Path("data/raw/ai4i2020.csv")
+from ..config import RAW_DATA_PATH
 
 # Loads the Dataset
 def load_raw_data():
-    if not RAW_DATA.exists():
-        raise FileNotFountError(f"Data not found at location: {RAW_DATA}")
+    if not RAW_DATA_PATH.exists():
+        raise FileNotFountError(f"Data not found at location: {RAW_DATA_PATH}")
 
-    df = pd.read_csv(RAW_DATA)
+    df = pd.read_csv(RAW_DATA_PATH)
     return df
 
 if __name__ == "__main__":
