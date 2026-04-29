@@ -17,3 +17,9 @@ This project analyzes manufacturing production and machine failure data to ident
 - Streamlit
 - Scikit-learn
 - Git/GitHub
+
+## Dataset
+
+This project uses the AI4I 2020 Predictive Maintenance Dataset from the UCI Machine Learning Repository.
+
+The dataset contains simulated industrial machine operating data, including temperature, rotational speed, torque, tool wear, and machine failure indicators.
