@@ -6,48 +6,50 @@ This dataset represents operational parameters from a hot strip rolling process.
 
 The dataset is used to analyze how process variables influence rolling performance and mechanical load.
 
+Source: https://www.kaggle.com/datasets/ziya07/hot-strip-rolling-process-dataset 
+
 ---
 
 ## Original Features
 
 ### entry_temperature
 - Description: Temperature of the steel strip at entry to the rolling mill  
-- Type: Numeric (°C or K depending on source)  
+- Type: Numeric (°C)  
 - Importance: Higher temperatures generally reduce deformation resistance  
 
 ---
 
 ### exit_temperature
 - Description: Temperature of the strip after rolling  
-- Type: Numeric  
+- Type: Numeric (°C)  
 - Importance: Indicates heat loss during the rolling process  
 
 ---
 
 ### rolling_speed
 - Description: Speed at which the strip passes through the rolls  
-- Type: Numeric (e.g., m/s or rpm equivalent)  
+- Type: Numeric (m/s)  
 - Importance: Affects throughput and strain rate  
 
 ---
 
 ### strip_thickness
 - Description: Thickness of the strip before rolling  
-- Type: Numeric  
+- Type: Numeric (mm)
 - Importance: Strongly influences required rolling force  
 
 ---
 
 ### material_grade
 - Description: Categorical label representing steel type/grade  
-- Type: Categorical  
+- Type: Categorical (A36, AISI 304, AISI 316, SS400)
 - Importance: Different grades have different mechanical properties  
 
 ---
 
 ### deformation_resistance
 - Description: Resistance of the material to deformation under load  
-- Type: Numeric  
+- Type: Numeric (MPa)
 - Importance: Directly affects required bending force  
 
 ---
@@ -61,7 +63,7 @@ The dataset is used to analyze how process variables influence rolling performan
 
 ### roll_diameter
 - Description: Diameter of the rolling rolls  
-- Type: Numeric  
+- Type: Numeric (mm)
 - Importance: Influences contact area and force distribution  
 
 ---
@@ -75,14 +77,14 @@ The dataset is used to analyze how process variables influence rolling performan
 
 ### strain_rate
 - Description: Rate of deformation applied to the material  
-- Type: Numeric  
+- Type: Numeric (1/s)
 - Importance: Affects material behavior under stress  
 
 ---
 
 ### lubrication_type
 - Description: Type of lubrication used during rolling  
-- Type: Categorical  
+- Type: Categorical (Dry, Oil, or Water-based)
 - Importance: Impacts friction and process efficiency  
 
 ---
@@ -103,7 +105,7 @@ The dataset is used to analyze how process variables influence rolling performan
 
 ### bending_force (Target Variable)
 - Description: Force applied to the strip during rolling  
-- Type: Numeric  
+- Type: Numeric (kN)
 - Importance: Key performance metric for the rolling process  
 
 ---
